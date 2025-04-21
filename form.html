@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .form {
+            max-width: 400px;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form__block">
+            <a class="close" href="./index.html"><img src="./image/close.svg" alt=""></a>
+            <h2 class="title"><span class="red">Заповніть форму</span> для реєстрації</h2>
+            <form class="form" action="" method="post">
+                <div class="inputblock mb-3">
+                    <input class="form-control" placeholder="Ваше Імʼя" name="name" type="text" required>
+                </div>
+                <div class="inputblock mb-3">
+                    <input class="form-control" placeholder="Ваша ел. пошта" name="email" type="email" required>
+                </div>
+                <div class="inputblock mb-3">
+                    <input class="form-control" placeholder="Ваш номер телефона" name="phone" type="tel" required>
+                </div>
+                <div class="order">
+                    <button class="send-form button" type="button">
+                        Надіслати
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <img class="background" src="image/form-bg.jpg" alt="">
+</body>
+
+<script>
+    $('.send-form').click(function() {
+        let actUrl = 'https://docs.google.com/forms/d/19R7SKhs5_jvXccxKnYhxEPUJwpqg2CV5qNDpMBpgQsc/formResponse',
+            form = $(this).parents('form');
+
+        let gDataFields = {
+            'entry.1049244373': form.find('input[name=name]').val(),
+            'entry.1169476251': form.find('input[name=email]').val(),
+            'entry.961293290': form.find('input[name=phone]').val(),
+        };
+
+        $.ajax({
+            type: "POST",
+            url: actUrl,
+            dataType: 'xml',
+            data: gDataFields,
+            statusCode: {
+                0: function() {
+                    alert("status 0");
+                }
+            },
+            
+        });
+
+        form[0].reset();
+
+    });
+</script>
+</html>

@@ -1,0 +1,173 @@
+/* ===== RESET STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: sans-serif;
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  button, input, textarea, select {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* ===== CUSTOM STYLES (переклад із SCSS) ===== */
+
+  body{
+    font-family: "Onest", sans-serif;
+    font-style: normal;
+  }
+
+
+  .hero{
+    max-width: 402px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+  }
+
+  .hero__items {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    margin-top: 15vw;
+  }
+  
+  .hero__block {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #FFFFFF;
+    position: relative;
+    border-radius: 46px;
+    margin-top: 102vw;
+  }
+  
+  .hero__text {
+    margin: 0 auto;
+    align-items: center;
+    max-width: 227.57px;
+    text-align: center;
+  }
+
+  .hero__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 100%;
+    margin-top: 4vw;
+  }
+  .item__date {
+    font-weight: 700;
+    background-color: #EE2222;
+  }
+  
+  .item__text {
+    font-weight: 300;
+    background-color: #AB846B;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .item{
+    border-radius: 42px;
+    padding: 10px 14px;
+    color: #FFFFFF;
+  }
+
+  .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 100%;
+
+    font-size: 31px;
+  }
+
+  .red {
+    color: #EE2222;
+  }
+  .light {
+    font-weight: 300;
+  }
+
+  .bold{
+    font-weight: 700;
+  }
+
+  .button {
+    display: flex;
+    font-weight: 700;
+    background-color: #EE2222;
+    font-size: 20px;
+    padding: 35px 60px;
+    border-radius: 52px;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;  
+    width: 100%;
+  }
+  
+  .hero__button {
+    margin-top: 5vw;
+  }
+
+
+  .background{
+    position: absolute;
+    bottom:0;
+  }
+
+
+
+  .form__block{
+    background-color: #FFFFFF;
+    border: 1px solid #CDCDCD;
+    border-radius: 46px;
+    padding: 20px;
+    margin-top: 25%;
+  }
+  
+
+  .form-control {
+    padding: 25px 30px;
+    border-radius: 52px;
+  }
+
+.close{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5vw;  
+}
+
+.send-form{
+  margin-top: 10vw;
+}
+
