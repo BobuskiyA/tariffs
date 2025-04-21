@@ -140,7 +140,9 @@
     bottom:0;
   }
 
-
+  .form-section{
+    margin-top: 10vw;
+  }
 
   .form__block{
     background-color: #FFFFFF;
