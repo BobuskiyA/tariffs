@@ -109,19 +109,18 @@
             $.ajax({
                 type: "POST",
                 url: actUrl,
-                dataType: "xml",
+                dataType: 'xml',
                 data: gDataFields,
                 statusCode: {
                     0: function () {
-                        alert("Форму успішно надіслано!");
-                        window.location.href = "https://t.me/+HzGDdLcxxsIyZTIy";
+                    window.location.href = 'https://t.me/+HzGDdLcxxsIyZTIy';
                     },
                     200: function () {
-                        alert("Форму успішно надіслано!");
-                        window.location.href = "https://t.me/+HzGDdLcxxsIyZTIy";
-                    },
-                },
+                    window.location.href = 'https://t.me/+HzGDdLcxxsIyZTIy';
+                    }
+                }
             });
+
 
             form[0].reset();
         });
