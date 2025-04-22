@@ -41,7 +41,7 @@
 
 
   .hero{
-    max-width: 402px;
+    max-width: 100%;
     margin: 0 auto;
     position: relative;
   }
@@ -61,7 +61,7 @@
     position: relative;
     border-radius: 46px;
     margin-top: 102vw;
-    margin-bottom: 15vw;
+    margin-bottom: 16vw;
   }
   
   .hero__text {
@@ -141,6 +141,11 @@
   }
 
   .form-section{
+  }
+
+  .form__container{
+    display: flex;
+    margin-top: 20vw;
   }
 
   .form__block{
