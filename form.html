@@ -54,16 +54,16 @@
 <script>
     $('.send-form').click(function () {
         let form = $(this).parents('form');
-    
+
         let name = form.find('input[name=name]').val().trim();
         let email = form.find('input[name=email]').val().trim();
         let phone = form.find('input[name=phone]').val().trim();
         let instagram = form.find('input[name=instagram]').val().trim();
-    
+
         // Проста валідація
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         const phonePattern = /^\d{10,}$/;
-    
+
         if (!name) {
             alert('Введіть ваше імʼя');
             return;
@@ -80,16 +80,16 @@
             alert('Введіть нік Instagram без пробілів');
             return;
         }
-    
+
         let actUrl = 'https://docs.google.com/forms/d/19R7SKhs5_jvXccxKnYhxEPUJwpqg2CV5qNDpMBpgQsc/formResponse';
-    
+
         let gDataFields = {
             'entry.1049244373': name,
             'entry.1169476251': email,
             'entry.961293290': phone,
             'entry.520222335': instagram,
         };
-    
+
         $.ajax({
             type: "POST",
             url: actUrl,
@@ -98,13 +98,15 @@
             statusCode: {
                 0: function () {
                     alert("Форму успішно надіслано!");
+                    window.location.href = 'https://t.me/+HzGDdLcxxsIyZTIy'; // Переадресація після успішної відправки
                 },
                 200: function () {
                     alert("Форму успішно надіслано!");
+                    window.location.href = 'https://t.me/+HzGDdLcxxsIyZTIy'; // Переадресація після успішної відправки
                 }
             }
         });
-    
+
         form[0].reset();
     });
 </script>
