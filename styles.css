@@ -145,7 +145,8 @@
 
   .form__container{
     display: flex;
-    margin-top: 20vw;
+    position: absolute;
+    top: 20vw;
   }
 
   .form__block{
