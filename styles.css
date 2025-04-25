@@ -64,7 +64,7 @@
     margin-bottom: 16vw;
   }
   
-  .hero__text {
+  .block__text {
     margin: 0 auto;
     align-items: center;
     max-width: 227.57px;
@@ -156,6 +156,10 @@
     padding: 20px;
   }
   
+  .form__text {
+    max-width: 64vw;
+  }
+
 
   .form-control {
     padding: 25px 30px;
@@ -176,3 +180,6 @@
   margin-bottom: 0.5rem !important;
 }
 
+h2{
+  margin-bottom: 3vw;
+}
