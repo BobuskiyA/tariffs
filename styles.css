@@ -82,7 +82,7 @@
     align-items: center;
     text-align: center;
     margin-top: 2vw;
-    margin-bottom: 88vw;
+    margin-bottom: 86vw;
   }
 
   .hero__button{
@@ -90,8 +90,8 @@
   }
 
   .hero__title {
-    margin-top: 5vw;
-    font-size: 49.06px;
+    margin-top: 4vw;
+    font-size: 11vw;
   }
 
   .container {
