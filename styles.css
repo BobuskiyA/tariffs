@@ -274,7 +274,8 @@ h2{
   background-color: #04AD45;
   border-radius: 52px;
   position: absolute;
-  left: 10%;
+  left: 5%;
+  right: 5%;
   bottom: -10%;
 }
 
