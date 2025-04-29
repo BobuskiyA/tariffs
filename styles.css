@@ -321,7 +321,7 @@ h2{
 }
 
 .block__button {
-  margin-top: 5vw;
+  margin-top: 8vw;
 }
 
 .book__button{
@@ -339,6 +339,8 @@ h2{
 
 .support__logo {
   margin-bottom: 5vw;
+  width: 60.51px;
+  height: 22.56px;
 }
 
 .support__title {
