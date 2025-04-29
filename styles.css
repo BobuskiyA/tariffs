@@ -82,7 +82,7 @@
     align-items: center;
     text-align: center;
     margin-top: 2vw;
-    margin-bottom: 100vw;
+    margin-bottom: 88vw;
   }
 
   .hero__button{
@@ -106,7 +106,7 @@
   .item{
     border-radius: 25.08px;
     border: 1px solid #B1B1B1;
-    padding: 10px 14px;
+    padding: 10px 12px;
     color: #979797;
     font-size: 9.53px;
   }
