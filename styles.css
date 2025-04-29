@@ -364,7 +364,7 @@ h2{
   align-items: center;
 }
 
-@media (max-width: 325px) {
+@media (max-width: 385px) {
   .tariffs__block {
     margin-bottom: 140px;
   }
