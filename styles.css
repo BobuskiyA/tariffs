@@ -40,10 +40,23 @@
   }
 
 
+  .title{
+    line-height: 100%;
+    align-items: center;
+    text-align: center;
+
+    font-size: 8vw;
+  }
+
+
   .hero{
     max-width: 100%;
     margin: 0 auto;
     position: relative;
+  }
+
+  .hero__name{
+    margin-top: 5vw;
   }
 
   .hero__items {
@@ -64,46 +77,42 @@
     margin-bottom: 16vw;
   }
   
-  .block__text {
+  .hero__text {
     margin: 0 auto;
     align-items: center;
-    max-width: 227.57px;
     text-align: center;
+    margin-top: 2vw;
+    margin-bottom: 100vw;
+  }
+
+  .hero__button{
+    margin-bottom: 15vw;
   }
 
   .hero__title {
-    margin-top: 4vw;
-  }
-  .item__date {
-    font-weight: 700;
-    background-color: #EE2222;
-  }
-  
-  .item__text {
-    font-weight: 300;
-    background-color: #AB846B;
+    margin-top: 5vw;
+    font-size: 49.06px;
   }
 
   .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 0 20px;
     position: relative;
     z-index: 10;
   }
 
   .item{
-    border-radius: 42px;
+    border-radius: 25.08px;
+    border: 1px solid #B1B1B1;
     padding: 10px 14px;
-    color: #FFFFFF;
+    color: #979797;
+    font-size: 9.53px;
   }
 
-  .title{
-    line-height: 100%;
-    align-items: center;
-    text-align: center;
-
-    font-size: 8vw;
+  .item span{
+    color: black;
   }
 
   .red {
@@ -130,14 +139,10 @@
     width: 100%;
   }
   
-  .hero__button {
-    margin-top: 5vw;
-  }
-
 
   .background{
     position: absolute;
-    bottom:0;
+    bottom: -1px;
   }
 
   .form-section{
@@ -181,5 +186,167 @@
 }
 
 h2{
+  font-size: 32px;
   margin-bottom: 3vw;
+}
+
+.tariffs{
+  background-color: black;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 100;
+  padding-top: 10vw;
+}
+
+.tariffs__title{
+  margin-bottom: 35px;
+}
+
+
+.tariffs__block {
+  background-color: #242424;
+  padding: 30px;
+  padding-top: 45px;
+  padding-bottom: 130px;
+  border-radius: 46px;
+  position: relative;
+  margin-bottom: 170px;
+}
+
+.tariff__title {
+  margin-bottom: 30px;
+}
+
+.tariff__modules {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.tariff__module {
+  letter-spacing: -0.04em;
+}
+
+.tariff__module span {
+  font-weight: 700;
+}
+
+
+.tariff__include {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tariff__includes {
+  font-weight: 700;
+  padding-left: 16px;
+  position: relative;
+}
+
+.tariff__includes::before {
+  content: "";
+  position: absolute; /* Розташування абсолютне, щоб мати можливість точно розмістити фон */
+  top: 15%;
+  left: 0;
+  width: 100%; /* Займає всю ширину контейнера */
+  height: 100%; /* Займає всю висоту контейнера */
+  background-image: url("/image/complate.svg"); /* Шлях до вашого зображення */
+  background-size: cover; /* Заповнює всю площу елемента */
+  background-position: center; /* Центрує зображення */
+  width: 8.4px;
+  height: 10.99px;
+
+}
+
+.green{
+  color: #04AD45;
+}
+
+.price__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  padding-bottom: 70px;
+  background-color: #04AD45;
+  border-radius: 52px;
+  position: absolute;
+  bottom: -10%;
+}
+
+.price__discount {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ABF5CC;
+  position: relative;
+}
+.price__discount::before {
+  content: "";
+  position: absolute; /* Розташування абсолютне, щоб мати можливість точно розмістити фон */
+  top: 45%;
+  left: -12%;
+  width: 100%; /* Займає всю ширину контейнера */
+  height: 100%; /* Займає всю висоту контейнера */
+  background-image: url("/image/vector.svg"); /* Шлях до вашого зображення */
+  background-size: cover; /* Заповнює всю площу елемента */
+  background-position: center; /* Центрує зображення */
+  height: 5px;
+  width: 40vw;
+  z-index: 10;
+}
+
+.price{
+  font-size: 53px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+
+.price__text {
+  letter-spacing: -0.04em;
+}
+
+.price__white {
+  color: black;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 11.91px;
+  position: absolute;
+  bottom: -15%;
+}
+
+.block__button {
+  margin-top: 5vw;
+}
+
+.book__button{
+  margin-top: 5vw;
+  border: 1px solid #FFFFFF;
+  background-color: black;
+  color: #FFFFFF;
+  margin-bottom: 100px;
+}
+
+
+.support{
+  padding: 35vw 0;
+}
+
+.support__logo {
+  margin-bottom: 5vw;
+}
+
+.support__title {
+  max-width: 60vw;
+}
+
+.support__text {
+  margin: 2vw 0;
+}
+
+.color{
+  color: #AB846B;
+  font-weight: 700;
 }
