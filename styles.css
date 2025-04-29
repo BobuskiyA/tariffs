@@ -206,7 +206,7 @@ h2{
 
 .tariffs__block {
   background-color: #242424;
-  padding: 30px;
+  padding: 10vw;
   padding-top: 45px;
   padding-bottom: 130px;
   border-radius: 46px;
@@ -362,4 +362,20 @@ h2{
   text-align: center;
   margin-top: 2vw;
   align-items: center;
+}
+
+@media (max-width: 325px) {
+  .tariffs__block {
+    margin-bottom: 240px;
+  }
+  .price__block {
+    bottom: -6%;
+  }
+
+  .price {
+    font-size: 40px;
+  }
+  .price__text {
+    font-size: 12px;
+}
 }
