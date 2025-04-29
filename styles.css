@@ -149,10 +149,15 @@
   .form-section{
   }
 
+  .form__title{
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+
   .form__container{
     display: flex;
     position: absolute;
-    top: 2vw;
+    top: 5vw;
   }
 
   .form__block{
@@ -160,10 +165,10 @@
     border: 1px solid #CDCDCD;
     border-radius: 46px;
     padding: 20px;
+    width: 100%;
   }
   
   .form__text {
-    max-width: 64vw;
   }
 
 
