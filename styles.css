@@ -144,6 +144,12 @@
     position: absolute;
     bottom: -1px;
   }
+  
+  .background__form{
+    position: absolute;
+    bottom: -10%;
+  }
+
 
   .form-section{
   }
